@@ -16,6 +16,22 @@ app.use((req, res, next) => {
   }
 })
 
+app.get('/api', (req, res) => {
+  res.send({
+    "welcome": "You've found the top level API endpoint. You're quite the explorer.",
+    "/info": {
+      "description": "returns full json object for all data needed for evanfreymiller.com",
+      "/blurb": "returns description data of Evan",
+      "/links": "returns top of page links, and relivant data about each",
+      "/title": "returns EJF, that's it."
+    },
+    "/lola": "returns a picture of my dog"
+  }) 
+})
+
+app.get('/api/lola', (req, res) => {
+  res.sendFile(path.join(__dirname, '/', `lola.jpg`));
+})
 
 app.get('/api/info', (req, res) => {
   axios.get(`${BASE_URL}/info.json`).then((response) => {
