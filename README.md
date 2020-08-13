@@ -4,6 +4,8 @@ This is the source code for www.EvanFreymiller.com.  This repo runs on the follo
  - React Context
  - Node/Express
  - Firebase
+ - Heroku
+ - AWS
 
 ## Available Scripts
 
