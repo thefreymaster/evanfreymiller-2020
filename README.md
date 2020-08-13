@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the source code for www.EvanFreymiller.com.  This repo runs on the following technologies:
+ - React
+ - React Hooks
+ - React Context
+ - Node/Express
+ - Firebase
 
 ## Available Scripts
 
