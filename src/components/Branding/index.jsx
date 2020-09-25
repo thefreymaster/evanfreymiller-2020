@@ -5,7 +5,7 @@ import './branding.css';
 const Branding = (props) => {
     const inline = {
         fontFamily: "'Sora', sans-serif",
-        fontSize: 150,
+        fontSize: 200,
         letterSpacing: -10,
     }
     return (

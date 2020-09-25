@@ -1,8 +1,11 @@
 export const BORDER = "1px solid #ffffff14";
 export const BORDER_BRIGHT = "1px solid #0000001c";
 
+
+
 export const STRIPES = "repeating-linear-gradient(45deg, transparent, transparent 35px, rgb(47 47 47 / 50%) 35px, rgb(0 0 0 / 50%) 70px)";
 export const STRIPES_BRIGHT = "repeating-linear-gradient(45deg, rgba(251, 247, 247, 0), transparent 35px, rgba(255, 255, 255, 0.5) 35px, #cecece80 70px)";
+
 export const LINKS = {
     fontWeight: 500, 
     textDecoration: "none", 
