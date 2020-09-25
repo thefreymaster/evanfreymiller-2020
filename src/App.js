@@ -13,6 +13,7 @@ import Loader from './components/Loader';
 import Zindex from './common/Zindex';
 import Title from './components/Title';
 import ThemeToggle from './components/ThemeToggle';
+import AnimatedBackground from './components/AnimatedBackground';
 
 const App = () => {
   const { fetching, isDay } = React.useContext(Context);
@@ -54,19 +55,23 @@ const App = () => {
           }
           <VerticalBar />
           <Flex direction="column" maxWidth={isMobile ? "100%" : "30%"}>
-            <Flex style={{ borderBottom: isDay ? BORDER_BRIGHT : BORDER, backgroundImage: getStripes(isDay) }} width="100%" height={isMobile ? "25%" : "33%"}>
-              {!delay && <Navigation.Mobile />}
-            </Flex>
-            <Flex alignItems="center" justifyContent="center" width="100%" height={isMobile ? "50%" : "33%"}>
-              <Branding />
-            </Flex>
-            <Flex justifyContent="center" alignItems={isMobile ? "center" : "flex-end"} width="100%" style={{
-              borderTop: isDay ? BORDER_BRIGHT : BORDER,
-              backgroundImage: getStripes(isDay)
-            }} height="33%">
-              {isMobile && <Blurb />}
-              {!isMobile && !delay && <div style={{ color: '#ffffff24', fontSize: 10, position: 'fixed', bottom: 10 }}>EvanFreymiller.com. Copyright 2020. All rights reserved.</div>}
-            </Flex>
+            <AnimatedBackground>
+              <Flex
+                // style={{ borderBottom: isDay ? BORDER_BRIGHT : BORDER, backgroundImage: getStripes(isDay) }}
+                width="100%" height={isMobile ? "25%" : "33%"}>
+                {!delay && <Navigation.Mobile />}
+              </Flex>
+              <Flex alignItems="center" justifyContent="center" width="100%" height={isMobile ? "50%" : "33%"}>
+                <Branding />
+              </Flex>
+              <Flex justifyContent="center" alignItems={isMobile ? "center" : "flex-end"} width="100%" style={{
+                // borderTop: isDay ? BORDER_BRIGHT : BORDER,
+                backgroundImage: getStripes(isDay)
+              }} height="33%">
+                {isMobile && <Blurb />}
+                {!isMobile && !delay && <div style={{ color: '#ffffff24', fontSize: 10, position: 'fixed', bottom: 10 }}>EvanFreymiller.com. Copyright 2020. All rights reserved.</div>}
+              </Flex>
+            </AnimatedBackground>
           </Flex>
           <VerticalBar />
           {
@@ -82,7 +87,7 @@ const App = () => {
                 <Blurb />
               </Flex>
               <Flex style={{ borderTop: isDay ? BORDER_BRIGHT : BORDER }} width="100%" height="33%">
-              {!delay && <ThemeToggle />}
+                {!delay && <ThemeToggle />}
               </Flex>
             </Flex>
           }

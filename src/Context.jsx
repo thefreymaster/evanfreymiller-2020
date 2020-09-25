@@ -15,6 +15,8 @@ const defaultState = {
 
 export const Context = React.createContext(defaultState);
 
+export const useStateContext = () => React.useContext(Context);
+
 const reducer = (state, action) => {
     const newState = { ...state };
     const { payload } = action;
