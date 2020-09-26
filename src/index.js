@@ -5,11 +5,15 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import * as Context from "./Context";
 import "react-awesome-button/dist/themes/theme-one.css";
+import * as ScreenSizeContext from './services/ScreenSizeProvider';
 
 ReactDOM.render(
-    <Context.Provider>
-        <App />
-    </Context.Provider>,
+    <ScreenSizeContext.Provider>
+        <Context.Provider>
+            <App />
+        </Context.Provider>
+    </ScreenSizeContext.Provider>
+    ,
     document.getElementById('root')
 );
 

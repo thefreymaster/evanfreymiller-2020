@@ -25,7 +25,7 @@ const Flex = (props) => {
     return (
         <React.Fragment>
             <Title style={{ minHeight: props.title && 30 }}>{props.title}</Title>
-            <div style={inline} onClick={props.onClick} className={classnames(props.className, {'background-transition': true})}>
+            <div ref={props.ref} style={inline} onClick={props.onClick} className={classnames(props.className, {'background-transition': true})}>
                 {props.children}
             </div>
         </React.Fragment>

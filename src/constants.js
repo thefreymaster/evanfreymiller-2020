@@ -19,3 +19,9 @@ export const COLOR = "#383838ab";
 
 export const COLOR_2_PERCENT_BRIGHT = "#e4e4e4";
 export const COLOR_2_PERCENT = "#1d1d1d";
+
+export const BACKGROUND_GRADIENT_WHITE = 'linear-gradient(180deg, #f0f0f0 0%, #ffffff 100%)';
+export const BACKGROUND_GRADIENT_WHITE_TOP = 'linear-gradient(0deg, #f0f0f0 0%, #ffffff 100%)';
+
+export const BACKGROUND_GRADIENT_DARK = 'linear-gradient(180deg, #121212 0%, #525252 100%)';
+export const BACKGROUND_GRADIENT_DARK_TOP = 'linear-gradient(0deg, #121212 0%, #525252 100%)';

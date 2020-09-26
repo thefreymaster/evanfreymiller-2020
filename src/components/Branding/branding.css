@@ -1,8 +1,15 @@
+.text-color-animation-night {
+    background: linear-gradient(45deg, #fff, #707070, #fff);
+}
+
+.text-color-animation-day {
+    background: linear-gradient(45deg, #fff, #707070, #fff);
+}
+
 .text-color-animation {
     background-clip: text !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(45deg, #fff, #333333, #fff);
     background-size: 400% 400%;
     animation: gradient 15s ease-in-out infinite;
 }
