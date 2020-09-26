@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { debounce } from 'lodash';
 import * as THREE from 'three';
 import WAVES from 'vanta/dist/vanta.waves.min';
 import { useStateContext } from '../../Context';
@@ -38,7 +37,7 @@ const AnimatedBackground = (props) => {
                 shininess: isDay ? 0.00 : 60,
             })
         }
-    }, [vantaEffect, isDay]);
+    }, [vantaEffect, isDay, previous]);
 
     return (
         <div style={{

@@ -1,10 +1,5 @@
 import React from 'react';
-import Axios from 'axios';
 import { getInfo } from './api';
-
-const dayStyle = {
-    color: "#1a1a1a"
-}
 
 const defaultState = {
     fetching: true,

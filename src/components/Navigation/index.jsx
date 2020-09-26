@@ -22,7 +22,7 @@ export const Desktop = () => {
                 if (link.active) {
                     return (
                         <Flex>
-                            <a key={link.href} target="_blank" className={isDay ? "link-bright" : "link"} style={{ textDecoration: "none" }} href={link.href}>{link.title}</a>
+                            <a key={link.href} target="_blank" rel="noopener noreferrer" className={isDay ? "link-bright" : "link"} style={{ textDecoration: "none" }} href={link.href}>{link.title}</a>
                         </Flex>
                     )
                 }
@@ -71,7 +71,7 @@ const Content = (props) => {
         <Flex direction="column" alignItems="center" height={window.innerHeight} width="100%">
             {links.map(link => {
                 if (link.active) {
-                    return (<a key={link.href} target="_blank" className="link" style={LINKS} href={link.href}>
+                    return (<a key={link.href} target="_blank" rel="noopener noreferrer" className="link" style={LINKS} href={link.href}>
                         <Flex flexGrow="none" justifyContent="center" alignItems="center" style={{ width: 200, borderBottom: isDay ? BORDER_BRIGHT : BORDER }} padding="20px">
                             {link.title}
                             <Flex />

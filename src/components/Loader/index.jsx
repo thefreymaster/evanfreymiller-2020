@@ -2,7 +2,6 @@ import React from 'react';
 import Container from '../../common/Container';
 import Flex from '../../common/Flex';
 import './loader.css';
-import Title from '../Title';
 import Branding from '../Branding';
 
 const Loader = (props) => {

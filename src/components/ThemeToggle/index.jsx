@@ -1,9 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEllipsisV, faFireAlt, faFireExtinguisher, faFire } from "@fortawesome/free-solid-svg-icons";
+import { faFire } from "@fortawesome/free-solid-svg-icons";
 import { COLOR, COLOR_BRIGHT } from "../../constants";
 import { Context } from "../../Context";
-import Flex from '../../common/Flex';
 
 const ThemeToggle = () => {
     const { dispatch, isDay } = React.useContext(Context);

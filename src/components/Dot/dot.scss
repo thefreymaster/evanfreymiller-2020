@@ -1,0 +1,41 @@
+.dot{
+    &__top-right{
+        background-color: white;
+        height: 2px;
+        width: 2px;
+        border-radius: 10px;
+        position: relative;
+        top: -8px;
+        right: -17px;
+    }
+
+    &__bottom-right{
+        background-color: white;
+        height: 2px;
+        width: 2px;
+        border-radius: 10px;
+        position: relative;
+        top: -8px;
+        right: -17px;
+    }
+
+    &__bottom-left{
+        background-color: white;
+        height: 2px;
+        width: 2px;
+        border-radius: 10px;
+        position: relative;
+        top: -8px;
+        right: -17px;
+    }
+
+    &__top-left{
+        background-color: white;
+        height: 2px;
+        width: 2px;
+        border-radius: 10px;
+        position: relative;
+        top: -8px;
+        left: -76px;
+    }
+}

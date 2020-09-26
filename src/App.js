@@ -7,11 +7,9 @@ import Branding from './components/Branding';
 import Blurb from './components/Blurb';
 import { isMobile } from 'react-device-detect';
 import { Context, useStateContext } from "./Context";
-import { getStripes } from './utils';
 import * as Navigation from './components/Navigation';
 import Loader from './components/Loader';
 import Zindex from './common/Zindex';
-import Title from './components/Title';
 import ThemeToggle from './components/ThemeToggle';
 import AnimatedBackground from './components/AnimatedBackground';
 

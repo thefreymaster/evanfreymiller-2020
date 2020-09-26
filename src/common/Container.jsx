@@ -1,5 +1,4 @@
 import React from 'react';
-import { debounce } from 'lodash';
 import { Context } from '../Context';
 import { BACKGROUND_COLOR_BRIGHT, BACKGROUND_COLOR } from '../constants';
 import { useScreenSizeContext } from '../services/ScreenSizeProvider';

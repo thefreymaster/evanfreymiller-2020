@@ -4,7 +4,8 @@ import Flex from '../../common/Flex';
 import './blurb.scss';
 import { isMobile } from 'react-device-detect';
 import { Context } from '../../Context';
-import { COLOR_BRIGHT, COLOR } from '../../constants';
+import { COLOR_BRIGHT, COLOR, WHITE } from '../../constants';
+import * as Dot from '../Dot';
 
 const Blurb = () => {
     const { isDay, blurb } = React.useContext(Context);
@@ -17,18 +18,30 @@ const Blurb = () => {
             </div>
             <div
                 className={classNames('blurb-attribute color-transition', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
-                style={{ width: 82, color: !isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif" }}>
+                style={{
+                    // boxShadow: isDay ? DAY_BOX_SHADOW : NIGHT_BOX_SHADOW,
+                    color: !isDay ? COLOR : WHITE, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif"
+                }}>
                 {blurb.title}
+                <Dot.TopRight />
             </div>
             <div
                 className={classNames('blurb-attribute color-transition', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
-                style={{ justifyContent: 'center', width: isMobile ? 240 : 208, color: !isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif" }}>
+                style={{
+                    // boxShadow: isDay ? DAY_BOX_SHADOW : NIGHT_BOX_SHADOW,
+                    justifyContent: 'center', color: !isDay ? COLOR : WHITE, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif"
+                }}>
                 {blurb.skills}
+                <Dot.TopRight />
             </div>
             <div
                 className={classNames('blurb-attribute color-transition', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
-                style={{ width: 68, color: !isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif" }}>
+                style={{
+                    // boxShadow: isDay ? DAY_BOX_SHADOW : NIGHT_BOX_SHADOW,
+                    color: !isDay ? COLOR : WHITE, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif"
+                }}>
                 {blurb.attributes}
+                <Dot.TopRight />
             </div>
         </Flex>
     )

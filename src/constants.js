@@ -25,3 +25,8 @@ export const BACKGROUND_GRADIENT_WHITE_TOP = 'linear-gradient(0deg, #f0f0f0 0%, 
 
 export const BACKGROUND_GRADIENT_DARK = 'linear-gradient(180deg, #121212 0%, #525252 100%)';
 export const BACKGROUND_GRADIENT_DARK_TOP = 'linear-gradient(0deg, #121212 0%, #525252 100%)';
+
+export const WHITE = "#fff";
+
+export const DAY_BOX_SHADOW = `0 2px 1px -1px #ffffff80, 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12)`;
+export const NIGHT_BOX_SHADOW = `0 2px 1px -1px #00000080, 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12)`;

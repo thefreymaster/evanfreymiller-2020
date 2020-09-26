@@ -12,7 +12,6 @@ const Flex = (props) => {
         height: props.height,
         width: props.width,
         backgroundColor: props.backgroundColor,
-        padding: props.padding,
         margin: props.margin,
         borderRadius: props.borderRadius,
         flexWrap: props.flexWrap,
