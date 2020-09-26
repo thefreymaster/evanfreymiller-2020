@@ -66,7 +66,6 @@ const App = () => {
                 </Flex>
                 <Flex justifyContent="center" alignItems={isMobile ? "center" : "flex-end"} width="100%" height="33%">
                   {isMobile && <Blurb />}
-                  {!isMobile && !delay && <div style={{ color: '#ffffff24', fontSize: 10, position: 'fixed', bottom: 10 }}>EvanFreymiller.com. Copyright 2020. All rights reserved.</div>}
                 </Flex>
               </Flex>
             </AnimatedBackground>
@@ -75,7 +74,7 @@ const App = () => {
           {
             !isMobile
             &&
-            <Flex direction="column" maxWidth="66%" style={{backgroundImage: isDay ? BACKGROUND_GRADIENT_WHITE_TOP : BACKGROUND_GRADIENT_DARK_TOP}}>
+            <Flex direction="column" maxWidth="66%" style={{ backgroundImage: isDay ? BACKGROUND_GRADIENT_WHITE_TOP : BACKGROUND_GRADIENT_DARK_TOP }}>
               <Flex width="100%" height={isMobile ? "25%" : "33%"}>
                 <Flex alignItems="center" height="30px" width="100%" margin={"30px 30px 30px 30px"}>
                   <Navigation.Desktop />
@@ -84,7 +83,8 @@ const App = () => {
               <Flex style={{ borderTop: isDay ? BORDER_BRIGHT : BORDER }} justifyContent="center" alignItems="center" width="100%" height="33%">
                 <Blurb />
               </Flex>
-              <Flex style={{ borderTop: isDay ? BORDER_BRIGHT : BORDER }} width="100%" height="33%">
+              <Flex justifyContent="flex-start" alignItems="flex-end" style={{ borderTop: isDay ? BORDER_BRIGHT : BORDER }} width="100%" height="33%">
+                {!isMobile && !delay && <div className="show-zoom-animation" style={{ marginLeft: 10, color: '#75757580', fontSize: 10, position: 'fixed', bottom: 10 }}>EvanFreymiller.com. Copyright 2020. All rights reserved.</div>}
                 {!delay && <ThemeToggle />}
               </Flex>
             </Flex>

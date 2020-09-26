@@ -27,3 +27,7 @@
 .navigation-button:focus {
     background-color: #939393;
 }
+
+.color-transition{
+    transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+}

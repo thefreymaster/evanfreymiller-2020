@@ -11,22 +11,22 @@ const Blurb = () => {
     return (
         <Flex direction="column" style={{ marginLeft: 5 }} justifyContent="center" alignItems={isMobile ? "center" : "flex-start"}>
             <div
-                className={classNames('blurb-name', { 'blurb-name__mobile': isMobile, 'blurb-name__desktop': !isMobile })}
+                className={classNames('blurb-name color-transition', { 'blurb-name__mobile': isMobile, 'blurb-name__desktop': !isMobile })}
                 style={{ color: isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 18, fontFamily: "'Sora', sans-serif" }}>
                 {blurb.name}
             </div>
             <div
-                className={classNames('blurb-attribute', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
+                className={classNames('blurb-attribute color-transition', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
                 style={{ width: 82, color: !isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif" }}>
                 {blurb.title}
             </div>
             <div
-                className={classNames('blurb-attribute', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
+                className={classNames('blurb-attribute color-transition', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
                 style={{ width: 208, color: !isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif" }}>
                 {blurb.skills}
             </div>
             <div
-                className={classNames('blurb-attribute', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
+                className={classNames('blurb-attribute color-transition', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
                 style={{ width: 68, color: !isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif" }}>
                 {blurb.attributes}
             </div>
