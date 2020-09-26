@@ -17,7 +17,7 @@ export const BACKGROUND_COLOR = "linear-gradient(rgb(26, 26, 26), rgb(51, 51, 51
 export const COLOR_BRIGHT = "#ffffffab";
 export const COLOR = "#383838d9";
 
-export const COLOR_2_PERCENT_BRIGHT = "#e4e4e4";
+export const COLOR_2_PERCENT_BRIGHT = "#fff";
 export const COLOR_2_PERCENT = "#1d1d1d";
 
 export const BACKGROUND_GRADIENT_WHITE = 'linear-gradient(180deg, #f0f0f0 0%, #ffffff 100%)';

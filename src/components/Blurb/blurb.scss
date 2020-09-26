@@ -1,0 +1,29 @@
+.blurb-name{
+    height: 20px;
+    align-items: center;
+    display: flex;
+    margin: 5px;
+
+    &__mobile{
+        letter-spacing: 6px;
+    }
+    &__desktop{
+        letter-spacing: 12px;
+    }
+}
+
+.blurb-attribute{
+    height: 20px;
+    align-items: center;
+    display: flex;
+    margin: 5px;
+    padding: 0px 0px 0px 10px;
+
+    &__day{
+        background-color: #4c4c4c;
+    }
+
+    &__night{
+        background-color: #fff;
+    }
+}
