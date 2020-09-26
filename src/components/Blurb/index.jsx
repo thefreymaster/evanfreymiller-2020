@@ -22,7 +22,7 @@ const Blurb = () => {
             </div>
             <div
                 className={classNames('blurb-attribute color-transition', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
-                style={{ width: isMobile ? 220 : 208, color: !isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif" }}>
+                style={{ justifyContent: 'center', width: isMobile ? 240 : 208, color: !isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif" }}>
                 {blurb.skills}
             </div>
             <div
