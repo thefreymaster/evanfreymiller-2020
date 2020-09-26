@@ -3,8 +3,8 @@
 .link {
     color: #939393;
     transition: color 200ms ease-in-out;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 
 .link:hover {
@@ -15,8 +15,8 @@
 .link-bright {
     color: #383838ab;
     transition: color 200ms ease-in-out;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 
 .link-bright:hover {

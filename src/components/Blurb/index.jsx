@@ -8,9 +8,9 @@ const Blurb = () => {
     const { isDay, blurb } = React.useContext(Context);
     return (
         <Flex direction="column" style={{marginLeft: 5}}>
-            <div style={{color: isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 800, fontSize: 12, fontFamily: "'Open Sans', sans-serif"}}>{blurb.title}</div>
-            <div style={{color: isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 800, fontSize: 12, fontFamily: "'Open Sans', sans-serif"}}>{blurb.skills}</div>
-            <div style={{color: isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 800, fontSize: 12, fontFamily: "'Open Sans', sans-serif"}}>{blurb.attributes}</div>
+            <div style={{color: isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif"}}>{blurb.title}</div>
+            <div style={{color: isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif"}}>{blurb.skills}</div>
+            <div style={{color: isDay ? COLOR : COLOR_BRIGHT, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif"}}>{blurb.attributes}</div>
         </Flex>
     )
 }

@@ -15,7 +15,7 @@ export const LINKS = {
 export const BACKGROUND_COLOR_BRIGHT = "linear-gradient(rgb(255 255 255), rgb(212 212 212))";
 export const BACKGROUND_COLOR = "linear-gradient(rgb(26, 26, 26), rgb(51, 51, 51))";
 export const COLOR_BRIGHT = "#ffffffab";
-export const COLOR = "#383838ab";
+export const COLOR = "#383838d9";
 
 export const COLOR_2_PERCENT_BRIGHT = "#e4e4e4";
 export const COLOR_2_PERCENT = "#1d1d1d";
