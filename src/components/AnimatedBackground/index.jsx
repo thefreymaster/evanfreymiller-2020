@@ -15,6 +15,7 @@ const AnimatedBackground = (props) => {
 
     useEffect(() => {
         const color = isDay ? 0xacacac : 0xc0c0c;
+        const shininess =  isDay ? 0.00 : 60;
         if (!vantaEffect) {
             setVantaEffect(WAVES({
                 el: vantaRef.current,
@@ -27,7 +28,7 @@ const AnimatedBackground = (props) => {
                 scaleMobile: 1.00,
                 color,
                 waveSpeed: 0.25,
-                shininess: 0.00,
+                shininess,
                 THREE,
             }))
         }

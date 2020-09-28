@@ -19,7 +19,6 @@ const Blurb = () => {
             <div
                 className={classNames('blurb-attribute color-transition', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
                 style={{
-                    // boxShadow: isDay ? DAY_BOX_SHADOW : NIGHT_BOX_SHADOW,
                     color: !isDay ? COLOR : WHITE, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif"
                 }}>
                 {blurb.title}
@@ -28,7 +27,6 @@ const Blurb = () => {
             <div
                 className={classNames('blurb-attribute color-transition', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
                 style={{
-                    // boxShadow: isDay ? DAY_BOX_SHADOW : NIGHT_BOX_SHADOW,
                     justifyContent: 'center', color: !isDay ? COLOR : WHITE, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif"
                 }}>
                 {blurb.skills}
@@ -37,7 +35,6 @@ const Blurb = () => {
             <div
                 className={classNames('blurb-attribute color-transition', { 'blurb-attribute__day': isDay, 'blurb-attribute__night': !isDay })}
                 style={{
-                    // boxShadow: isDay ? DAY_BOX_SHADOW : NIGHT_BOX_SHADOW,
                     color: !isDay ? COLOR : WHITE, textAlign: isMobile && 'center', fontWeight: 900, fontSize: 12, fontFamily: "'Raleway', sans-serif"
                 }}>
                 {blurb.attributes}
