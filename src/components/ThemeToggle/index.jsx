@@ -1,18 +1,18 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEllipsisV, faFireAlt, faFireExtinguisher, faFire } from "../../../node_modules/@fortawesome/free-solid-svg-icons";
+import { faFire } from "@fortawesome/free-solid-svg-icons";
 import { COLOR, COLOR_BRIGHT } from "../../constants";
 import { Context } from "../../Context";
-import Flex from '../../common/Flex';
 
 const ThemeToggle = () => {
     const { dispatch, isDay } = React.useContext(Context);
 
     return (
         <FontAwesomeIcon
+            cursor="pointer"
             size="lg"
             color={isDay ? 'white' : COLOR}
-            icon={isDay ? faFireExtinguisher : faFire}
+            icon={faFire}
             onClick={() => {
                 isDay ? dispatch({ type: "SET_IS_NIGHT" }) : dispatch({ type: "SET_IS_DAY" });
             }}
@@ -23,6 +23,7 @@ const ThemeToggle = () => {
                 position: 'absolute',
                 bottom: '50px',
                 right: '50px',
+                userSelect: 'none', 
             }}
             className="navigation-button show-zoom-animation"
         />

@@ -1,5 +1,7 @@
 import React from 'react';
+import classnames from 'classnames';
 import Title from './Title';
+import './common.scss';
 
 const Flex = (props) => {
     const inline = {
@@ -10,7 +12,6 @@ const Flex = (props) => {
         height: props.height,
         width: props.width,
         backgroundColor: props.backgroundColor,
-        padding: props.padding,
         margin: props.margin,
         borderRadius: props.borderRadius,
         flexWrap: props.flexWrap,
@@ -23,7 +24,7 @@ const Flex = (props) => {
     return (
         <React.Fragment>
             <Title style={{ minHeight: props.title && 30 }}>{props.title}</Title>
-            <div style={inline} onClick={props.onClick} className={props.className}>
+            <div ref={props.ref} style={inline} onClick={props.onClick} className={classnames(props.className, {'background-transition': true})}>
                 {props.children}
             </div>
         </React.Fragment>

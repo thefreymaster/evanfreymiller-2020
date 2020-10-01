@@ -1,0 +1,48 @@
+.dot{
+    &__day{
+        background-color: white;
+    }
+
+    &__night{
+        background-color: #383838d9;
+    }
+
+    &__top-right{
+        height: 3px;
+        width: 3px;
+        border-radius: 100px;
+        position: relative;
+        top: -8px;
+        right: -17px;
+    }
+
+    &__bottom-right{
+        background-color: white;
+        height: 2px;
+        width: 2px;
+        border-radius: 10px;
+        position: relative;
+        top: -8px;
+        right: -17px;
+    }
+
+    &__bottom-left{
+        background-color: white;
+        height: 2px;
+        width: 2px;
+        border-radius: 10px;
+        position: relative;
+        top: -8px;
+        right: -17px;
+    }
+
+    &__top-left{
+        background-color: white;
+        height: 2px;
+        width: 2px;
+        border-radius: 10px;
+        position: relative;
+        top: -8px;
+        left: -76px;
+    }
+}
