@@ -20,7 +20,7 @@ const AnimatedBackground = (props) => {
             setVantaEffect(WAVES({
                 el: vantaRef.current,
                 mouseControls: true,
-                touchControls: false,
+                touchControls: true,
                 gyroControls: true,
                 minHeight: 200.00,
                 minWidth: 200.00,
@@ -43,7 +43,7 @@ const AnimatedBackground = (props) => {
     return (
         <div style={{
             height: height,
-            width: width * props.width,
+            width: width,
             zIndex: 0
         }} ref={vantaRef}>
             {props.children}

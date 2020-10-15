@@ -19,6 +19,7 @@ const Flex = (props) => {
         padding: props.padding,
         flexGrow: props.flexGrow || 1,
         maxWidth: props.maxWidth,
+        zIndex: props.zIndex,
         ...props.style,
     }
     return (

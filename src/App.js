@@ -37,24 +37,10 @@ const App = () => {
       </Zindex>
       <Zindex zIndex={1}>
         <Container>
-          {/* {!isMobile
-            &&
-            <Flex direction="column" maxWidth="13%">
-              <Flex style={{ borderBottom: isDay ? BORDER_BRIGHT : BORDER }} width="100%" height="33%">
-                <Flex alignItems="center" height="30px" width="100%" margin={"30px 30px 30px 30px"}>
-                  <Flex alignItems="center" style={{ color: '#939393' }}>
-                    <Title />
-                  </Flex>
-                </Flex>
-              </Flex>
-              <Flex width="100%" height="33%"></Flex>
-              <Flex style={{ borderTop: isDay ? BORDER_BRIGHT : BORDER }} width="100%" height="33%"></Flex>
-            </Flex>
-          } */}
           <VerticalBar />
           <Flex direction="column" maxWidth={isMobile ? "100%" : "30%"} >
-            <AnimatedBackground width="30%">
-              <Flex direction="column" height="100%">
+            <AnimatedBackground>
+              <Flex direction="column" height="100%" width="30%">
                 <Flex
                   width="100%" height={isMobile ? "25%" : "33%"}>
                   {!delay && <Navigation.Mobile />}
@@ -72,7 +58,7 @@ const App = () => {
           {
             !isMobile
             &&
-            <Flex direction="column" maxWidth="66%" style={{ backgroundImage: isDay ? BACKGROUND_GRADIENT_WHITE_TOP : BACKGROUND_GRADIENT_DARK_TOP }}>
+            <Flex zIndex={1} direction="column" maxWidth="66%" style={{ backgroundImage: isDay ? BACKGROUND_GRADIENT_WHITE_TOP : BACKGROUND_GRADIENT_DARK_TOP }}>
               <Flex width="100%" height={isMobile ? "25%" : "33%"}>
                 <Flex alignItems="center" height="30px" width="100%" margin={"30px 30px 30px 30px"}>
                   <Navigation.Desktop />
@@ -98,7 +84,7 @@ const VerticalBar = () => {
   const { isDay } = useStateContext();
   return (
     !isMobile &&
-    <Flex direction="column" style={{ borderRight: isDay ? BORDER_BRIGHT : BORDER, borderLeft: isDay ? BORDER_BRIGHT : BORDER, backgroundImage: isDay ? BACKGROUND_GRADIENT_WHITE : BACKGROUND_GRADIENT_DARK }} maxWidth="2%">
+    <Flex zIndex={1} direction="column" style={{ borderRight: isDay ? BORDER_BRIGHT : BORDER, borderLeft: isDay ? BORDER_BRIGHT : BORDER, backgroundImage: isDay ? BACKGROUND_GRADIENT_WHITE : BACKGROUND_GRADIENT_DARK }} maxWidth="2%">
       <Flex style={{ borderBottom: isDay ? BORDER_BRIGHT : BORDER }} width="100%" height={isMobile ? "25%" : "33%"}>
         <Flex style={{ borderBottom: isDay ? BORDER_BRIGHT : BORDER }} width="100%" height="33%" margin={"30px 30px 30px 30px"}>
           <Flex style={{ color: '#939393' }} maxWidth="100px">
