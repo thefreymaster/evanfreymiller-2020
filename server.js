@@ -54,5 +54,6 @@ if (process.env.NODE_ENV === 'production') {
 
 const port = process.env.PORT || 9900
 app.listen(port, () => {
+  console.log(process.env);
   console.log(`API listening on port ${port}...`)
 })
