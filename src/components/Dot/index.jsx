@@ -9,16 +9,13 @@ export const TopRight = () => {
 }
 
 export const BottomRight = () => {
-    const { isDay } = useStateContext();
     return <div className="dot__bottom-right" />
 }
 
 export const BottomLeft = () => {
-    const { isDay } = useStateContext();
     return <div className="dot__bottom-left" />
 }
 
 export const TopLeft = () => {
-    const { isDay } = useStateContext();
     return <div className="dot__top-left" />
 }
